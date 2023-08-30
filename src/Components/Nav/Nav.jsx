@@ -10,12 +10,12 @@ export default function Nav() {
       </div>
       <ul>
         <li>
-          <Link>
+          <Link to='/'>
           Home
           </Link>
         </li>
         <li>
-          <Link>
+          <Link to='/topics'>
           Topics
           </Link>
         </li>
