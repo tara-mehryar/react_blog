@@ -12,7 +12,8 @@ export default function App() {
     <div className="App">
       <Nav />
       <Routes>
-
+        <Route path='/' element={<Home/>}/>
+        <Route path='/topics' element={<TopicList/>}/>
       </Routes>
     </div>
     </BrowserRouter>
