@@ -1,6 +1,9 @@
 import './App.css';
 import Nav from './components/Nav/Nav.jsx';
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home/Home.jsx';
+import TopicList from './Components/TopicList/TopicList.jsx';
+
 
 
 export default function App() {
@@ -8,7 +11,9 @@ export default function App() {
     <BrowserRouter>
     <div className="App">
       <Nav />
-      <h1 style={{ padding: '200px 35%' }}>This is where your pages will appear</h1>
+      <Routes>
+
+      </Routes>
     </div>
     </BrowserRouter>
   );
