@@ -7,10 +7,14 @@ export default function Post() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
+  console.log(useParams());
+  const { id } = useParams()
+  console.log(typeof id)
+
   useEffect(() => {
     // This is where you would make an axios call to a server in a fullstack application
     // but for today we'll be just be filtering an array of dummy data
-    const post = postData.find((post) => post.id === 2);
+    const post = postData.find((post) => post.id === +id);
     if (post) {
       setTitle(post.title);
       setContent(post.content);
